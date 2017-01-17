@@ -9,7 +9,7 @@
     "compile": "babel --plugins \"transform-runtime\" ./src  --out-dir ./lib",
     "prepublish": "rimraf ./lib && npm run compile",
     "dev": "DEBUG=weixinbot nodemon lib/wechat.js",
-    "start" : "nodemon lib/wechat.js"
+    "start" : "node lib/wechat.js"
   },
   "dependencies": {
     "axios": "^0.15.3",
