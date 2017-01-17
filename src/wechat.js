@@ -1,7 +1,9 @@
 import Weixinbot from 'weixinbot';
 import simsimi from './webservice/simsimi';
 
-const bot = new Weixinbot();
+const bot = new Weixinbot({
+	receiver : '773655223@qq.com'
+});
 
 let botMap = {
 
