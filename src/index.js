@@ -4,5 +4,6 @@
  */
 
 import wechat from './wechat';
+import './applets/simsimi';
 
 wechat.run();
