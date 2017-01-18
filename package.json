@@ -8,8 +8,11 @@
   "scripts": {
     "compile": "babel --plugins \"transform-runtime\" ./src  --out-dir ./lib",
     "prepublish": "rimraf ./lib && npm run compile",
-    "dev": "DEBUG=weixinbot nodemon lib/wechat.js",
-    "start" : "DEBUG=weixinbot node lib/wechat.js"
+    "dev": "DEBUG=weixinbot node lib/wechat.js",
+    "start" : "mg start --config ./mongroup.conf",
+    "stop" : "mg stop --config ./mongroup.conf",
+    "restart" : "mg restart --config ./mongroup.conf",
+    "status" : "mg status --config ./mongroup.conf"
   },
   "dependencies": {
     "axios": "^0.15.3",
