@@ -5,5 +5,6 @@
 
 import wechat from './wechat';
 import './applets/simsimi';
+import './applets/dinner_reminder';
 
 wechat.run();

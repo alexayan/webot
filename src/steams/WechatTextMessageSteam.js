@@ -14,6 +14,6 @@
  */
  export default messageSteam.filter((msg)=>{
  	if(msg.MsgType === wechat.MSGTYPE_TEXT){
- 		return msg;
+ 		return true;
  	}
  });
