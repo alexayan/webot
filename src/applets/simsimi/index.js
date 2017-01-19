@@ -32,6 +32,7 @@ frientMessageSteam.subscribe((msg)=>{
 	  		}else{
 	  			wechat.sendText(msg.FromUserName, '不明白你在说什么:(');
 	  		}
+	  		session.startSession();
 	  	});
 	}
 });
