@@ -4,6 +4,8 @@
 
 ## run for develop
 
+`git clone https://github.com/alexayan/webot.git`
+
 `npm install`
 
 `npm run compile`
