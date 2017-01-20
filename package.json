@@ -2,7 +2,7 @@
   "name": "webot",
   "version": "0.0.1",
   "description": "wechat bot",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "alexayan",
   "license": "MIT",
   "scripts": {
