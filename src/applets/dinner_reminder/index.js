@@ -23,5 +23,7 @@ ReminderSetSteam.subscribe((data)=>{
 });
 
 UserRemindSteam.subscribe((data)=>{
-	wechat.sendText(data.name, '快预定晚餐吧:)');
+	console.log('remind');
+	console.log(data);
+	// wechat.sendText(data.name, '快预定晚餐吧:)');
 });

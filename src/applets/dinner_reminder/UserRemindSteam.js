@@ -5,10 +5,15 @@
  
 import db from './db';
 import Rx from 'rxjs/Rx';
+import schedule from 'node-schedule';
 
-const REMIND_TIME = '15:30';
+const REMIND_TIME = '30 15 * * 1,2,3,4,5';
 
-const UserRemindSteam = Rx.Observable.timer(getDelay(), 60*1000*60*24).flatMap(()=>{
+const UserRemindSteam = Rx.Observable.create((observer)=>{
+	schedule.scheduleJob(REMIND_TIME, function(){
+		observer.next('remind');
+	});
+}).flatMap(()=>{
 	return Rx.Observable.bindNodeCallback(db.find.bind(db))({});
 }).flatMap((reminds)=>{
 	return Rx.Observable.from(reminds);
