@@ -7,7 +7,7 @@ import db from './db';
 import Rx from 'rxjs/Rx';
 import schedule from 'node-schedule';
 
-const REMIND_TIME = '30 15 * * 1,2,3,4,5';
+const REMIND_TIME = '30 7 * * 1,2,3,4,5';
 
 const UserRemindSteam = Rx.Observable.create((observer)=>{
 	schedule.scheduleJob(REMIND_TIME, function(){
