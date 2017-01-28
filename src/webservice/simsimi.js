@@ -5,7 +5,7 @@
  
 import axios from 'axios';
 
-const KEY = '898ef576-ad3e-461d-b8a1-6fac7d4606d4';
+const KEY = '77c621a8-d60e-4b60-861f-e1e7554be54f';
 
 /**
  * 获取 simsimi 回复
